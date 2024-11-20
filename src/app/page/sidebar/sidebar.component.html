@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-3">
+        <div class="sidebar bg-light p-3 d-flex flex-column" style="width: 380px; height: 100vh;">
+            <div class="mb-3">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="eau.jpg" style="display: flex; position: relative; width: 50px; height: 50px; border-radius: 50%; margin-left: 10px;">
+                    </div>
+                    <div class="col-9" style="display: fixed; position: relative; bottom: 15%;">
+                        <h6 style="font-size: 18px; font-weight: 600;">
+                            Dimitri Tekam
+                            <p style="color: dimgrey; font-size: 14px;">Vous êtes hors connexion</p>
+                        </h6>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="Rechercher...">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <ul class="nav flex-column flex-grow-1">
+                <li class="nav-item">
+                    <a routerLink="/jour" class="nav-link active d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-sun me-2"></i>Ma journée</span>
+                        <span class="badge bg-primary rounded-pill">3</span> <!-- Affiche le compteur -->
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/important" class="nav-link d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-star me-2"></i>Important</span>
+                        <span class="badge bg-primary rounded-pill">5</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="planifier" class="nav-link d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-calendar me-2"></i>Planifié</span>
+                        <span class="badge bg-primary rounded-pill">3</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="affecter" class="nav-link d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-user me-2"></i>Affectées à moi</span>
+                        <span class="badge bg-primary rounded-pill">1</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="tache" class="nav-link d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-tasks me-2"></i>Tâches</span>
+                        <span class="badge bg-primary rounded-pill">8</span>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+        </div>
+    </div>
+    <div class="col-9">
+        <router-outlet></router-outlet>
+    </div>
+</div>

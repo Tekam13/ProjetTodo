@@ -1,0 +1,39 @@
+.row{
+    display: flex;
+    right: 10%;
+}
+.offcanvas {
+    visibility: hidden;
+    transform: translateX(100%); /* Modifié pour apparaître de la droite */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .offcanvas.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  
+  .offcanvas-backdrop {
+    display: none;
+  }
+  
+  .offcanvas-backdrop.show {
+    display: block;
+  }
+
+  .color-box {
+    border-radius: 5px;
+    border: 0.5px solid #000;
+    color: #fff;
+  }
+  
+  .input-group {
+    display: flex;
+  }
+  .input-group .form-control {
+    border-radius: 0.25rem;
+  }
+  .input-group .btn {
+    border-radius: 0.25rem;
+  }
+  
